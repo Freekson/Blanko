@@ -1,0 +1,101 @@
+$black-color: #000;
+$main-color: #FF7143;
+$white-color: #fff;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-wrapper{
+    height: 100vh;
+    background-color: #FF7143;
+    overflow: hidden;
+}
+
+
+//? first page content
+
+.section-header{
+    width: 88.75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.section-header__image{
+    position: relative;
+    z-index: 0;
+    img{
+        position: absolute;
+        top: -90px; 
+        right: 0;
+    }
+}
+
+.section-header__info{
+    margin-top: 80px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: calc(100vh - 80px);
+}
+.section-header__buy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buy__header{
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin-bottom: 27px;
+}
+.buy__inf{
+    width: 60%;
+    text-align: center;
+    font-size: 1.125rem;
+}
+.buy__bth-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+}
+.buy__btn{
+    padding: 20px 32px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+.buy__btn_black{
+    background-color: $black-color;
+    color: $white-color;
+    margin-right: 8px;
+}
+.buy__btn_white{
+    background-color: $white-color;
+}
+.section-header__rate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    svg{
+        margin-bottom: 23px;
+    }
+}
+.rate__inf{
+    font-weight: bold;
+    font-size: 1.25rem;
+    width: 50%;
+    text-align: center;
+}
+.rate-rewies{
+    margin-top: 16px;
+    span{
+        color: rgba(0, 0, 0, 0.6);
+    }
+}

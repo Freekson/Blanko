@@ -1,0 +1,65 @@
+$black-color: #000;
+$main-color: #FF7143;
+$white-color: #fff;
+
+//? header
+
+.header{
+    background-color: $black-color;
+    height: 80px;
+    width: 100%;
+    color: white;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+}
+.header__logo{
+    border-right: 1px solid rgba(255, 255, 255, 0.16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+}
+.header__list{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+.list__mail{
+    background: rgba(255, 255, 255, 0.12);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+.list__items{
+    display: flex;
+    .header__link:not(:first-child){
+        margin-left: 20px;
+    }
+}
+.header__login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    border-left: 1px solid rgba(255, 255, 255, 0.16);
+}
+.header__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        margin-right: 7px;
+        white-space: nowrap;
+    }
+}
+.buy-btn{
+    font-weight: bold;
+    color: $black-color;
+    background-color: $main-color;
+    padding: 12px 32px;
+    border-radius: 6px;
+    margin-left: 5%;
+    cursor: pointer;
+}
