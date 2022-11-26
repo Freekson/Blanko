@@ -14,17 +14,18 @@ body{
 }
 
 .header-wrapper{
-    height: 100vh;
-    background-color: #FF7143;
     overflow: hidden;
 }
 
-
-//? first page content
-
-.section-header{
+.section{
     width: 88.75%;
     margin: 0 auto;
+}
+//? section-header
+.section-header__wrapper{
+    background-color: $main-color;
+}
+.section-header{
     display: flex;
     justify-content: space-between;
 }
@@ -34,10 +35,9 @@ body{
     img{
         position: absolute;
         top: -90px; 
-        right: 0;
+        right: -8px;
     }
 }
-
 .section-header__info{
     margin-top: 80px;
     width: 65%;
@@ -70,6 +70,7 @@ body{
     padding: 20px 32px;
     font-weight: bold;
     border-radius: 6px;
+    cursor: pointer;
 }
 .buy__btn_black{
     background-color: $black-color;
@@ -98,4 +99,88 @@ body{
     span{
         color: rgba(0, 0, 0, 0.6);
     }
+}
+
+//? section-offers
+
+.section-offers{
+    display: flex;
+    justify-content: space-around;
+    margin: 80px auto;
+}
+.offers__item{
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+.offers__text{
+    margin-left: 24px;
+}
+.offers__header{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+//? section-image
+
+.section-image{
+    display: flex;
+    margin-bottom: 100px;
+    img{
+        height: 600px;
+    }
+}
+.text-block{
+    height: 600px;
+    background-color: $black-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.text-block__inf{
+    font-size: 2.5rem;
+    width: 60%;
+    text-align: center;
+    margin: 40px 0;
+}
+.author__name{
+    font-weight: bold;
+    text-align: center;
+}
+.author__position{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+//?section pages
+
+.section-pages__header{
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 26px 0;
+}
+.section-pages__item{
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 8px 8px rgba(16, 19, 80, 0.12);
+    border-radius: 6px; 
+    width: 32%;
+    margin-bottom: 20px;
+    img{
+        width: 100%;
+        border-top-left-radius: 6px; 
+        border-top-right-radius: 6px; 
+    }
+}
+.section-pages__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section-pages__text{
+    margin: 25px 0 25px 33px;
+    font-weight: bold;
+    font-size: 1.25rem;
 }
