@@ -34,7 +34,7 @@ body{
     z-index: 0;
     img{
         position: absolute;
-        top: -90px; 
+        top: -91px; 
         right: -8px;
     }
 }
@@ -170,6 +170,7 @@ body{
     border-radius: 6px; 
     width: 32%;
     margin-bottom: 20px;
+    cursor: pointer;
     img{
         width: 100%;
         border-top-left-radius: 6px; 
@@ -187,7 +188,7 @@ body{
     font-size: 1.25rem;
 }
 
-//? section-form section
+//? section form
 
 .section-form{
     background-color: $main-color;
@@ -283,6 +284,7 @@ body{
     color: $white-color;
     font-weight: bold;
     margin-bottom: 16px;
+    cursor: pointer;
 }
 .section-form__text{
     text-align: center;

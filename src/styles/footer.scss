@@ -1,3 +1,81 @@
-footer{
+$black-color: #000;
+$main-color: #FF7143;
+$white-color: #fff;
+
+//? footer
+
+.footer-wrapper{
+    background-color: $black-color;
+}
+.footer{
+    width: 88.75%;
+    margin: 0 auto;
+}
+.footer-block{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__logo{
+    padding: 80px 0;
+    a{
+        height: 36px;
+    }
+}
+.footer__btn{
+    width: 15%;
+    height: 48px;
+    color: $black-color;
+    background-color: $white-color;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.footer__links{
+    margin-bottom: 28px;
+}
+.links{
+    display: flex;
+    list-style-type: none;
+    li:not(:last-child){
+        margin-right: 16px;
+    }
+    a{
+        text-decoration: none;
+        color: $white-color;
+    }
+}
+.footer__social{
+    a{
+        text-decoration: none;
+    }
+}
+.footer-line{
+    background: rgba(255, 255, 255, 0.16);
+    color: rgba(255, 255, 255, 0.16);
+    height: 1px;
+    border: none;
+}
+.footer__author{
+    color: $white-color;
+    padding: 30px 0;
+}
+.author{
+    display: flex;
+    align-items: center;
+    p{
+        &:not(:last-child){
+            margin-right: 16px;
+        }
+        &:last-child{
+            margin-left: 16px;
+        }
+        a{
+            text-decoration: none;
+            color: $main-color;
+        }
+    }
 }
